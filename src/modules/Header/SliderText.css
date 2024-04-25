@@ -1,0 +1,35 @@
+.slide-text {
+  position: absolute;
+  white-space: nowrap;
+  width: 100%;
+  text-align: center;
+  font-size: .7em !important;
+  letter-spacing: .2em;
+  font-weight: 700;
+}
+
+.slide-out {
+  animation: slideOut .5s ease-out forwards;
+}
+
+.slide-in {
+  animation: slideIn .5s ease-out forwards;
+}
+
+@keyframes slideOut {
+  from {
+    transform: translateX(0);
+  }
+  to {
+    transform: translateX(-100%);
+  }
+}
+
+@keyframes slideIn {
+  from {
+    transform: translateX(100%);
+  }
+  to {
+    transform: translateX(0);
+  }
+}
