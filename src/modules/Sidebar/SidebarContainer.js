@@ -12,7 +12,7 @@ const SidebarContainer = ( { isDrawerOpen } ) => {
   return (
     <Drawer direction={'left'} open={isDrawerOpen || false} onOpenChange={( value ) => dispatch( setOpenSidebarDrawer( value ) )}>
       <DrawerContent className='removeAfter bg-slate-100'>
-        <div className='items-center flex justify-center mt-[-20px] py-3 bg-white'>
+        <div className='items-center flex justify-center mt-[-20px] py-2 bg-white'>
           <Tabs defaultValue="account" className="flex items-center justify-between bg-slate-200">
             <TabsList className='bg-white'>
               <TabsTrigger value="mens" className='bg-white'>MENS</TabsTrigger>
