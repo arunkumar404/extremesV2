@@ -34,31 +34,40 @@ const SidebarContainer = ( { isDrawerOpen } ) => {
             </div>
           </div>
           <div className='flex flex-col gap-4 items-center w-[92%] py-4'>
-            <div className='shadow-sm'>
+            <div className='shadow-sm relative'>
+              <p className='absolute top-[50%] translate-y-[-50%] left-[1rem] text-lg font-bold'>TRENDING: JACKETS</p>
               <img src='https://culture-kings-sanity.imgix.net/1075e08fcc7d3c626fccc73b88c59e1b680803b9-876x280.jpg?w=600&auto=compress,format' alt='image1' />
             </div>
-            <div className='shadow-sm'>
+            <div className='shadow-sm relative'>
+              <p className='absolute top-[50%] translate-y-[-50%] left-[1rem] text-lg font-bold'>NEW ARRIVALS</p>
               <img src='https://culture-kings-sanity.imgix.net/3b5b3e6fdc4c4a5de77df4ded2097b335344bbb3-876x280.jpg?w=600&auto=compress,format' alt='image2' />
             </div>
-            <div className='shadow-sm'>
+            <div className='shadow-sm relative'>
+              <p className='absolute top-[50%] translate-y-[-50%] left-[1rem] text-lg font-bold'>BEST SELLERS</p>
               <img src='https://culture-kings-sanity.imgix.net/0d0bf9825522ca947b7b7aa26372261dbc8fa58f-876x280.jpg?w=600&auto=compress,format' alt='image3' />
             </div>
-            <div className='shadow-sm'>
+            <div className='shadow-sm relative'>
+              <p className='absolute top-[50%] translate-y-[-50%] left-[1rem] text-lg font-bold'>UPCOMING RELEASES</p>
               <img src='https://culture-kings-sanity.imgix.net/7d1913f0b3d9b4226b34fb1998c7160262f51ea6-876x280.jpg?w=600&auto=compress,format' alt='image4' />
             </div>
-            <div className='shadow-sm'>
+            <div className='shadow-sm relative'>
+              <p className='absolute top-[50%] translate-y-[-50%] left-[1rem] text-lg font-bold'>TOPS</p>
               <img src='https://culture-kings-sanity.imgix.net/d9687bd1f3dd17182f7ddcc5a810de123e567a45-876x280.jpg?w=600&auto=compress,format' alt='image5' />
             </div>
-            <div className='shadow-sm'>
+            <div className='shadow-sm relative'>
+              <p className='absolute top-[50%] translate-y-[-50%] left-[1rem] text-lg font-bold'>BOTTOMS</p>
               <img src='https://culture-kings-sanity.imgix.net/6a548c05854c25225e8b42e1d0b40f59305f0c81-876x280.jpg?w=600&auto=compress,format' alt='image6' />
             </div>
-            <div className='shadow-sm'>
+            <div className='shadow-sm relative'>
+              <p className='absolute top-[50%] translate-y-[-50%] left-[1rem] text-lg font-bold'>FOOTWEAR</p>
               <img src='https://culture-kings-sanity.imgix.net/d1308323debaa0cd4eeafeb938671ddeea5c342f-876x280.jpg?w=600&auto=compress,format' alt='image7' />
             </div>
-            <div className='shadow-sm'>
+            <div className='shadow-sm relative'>
+              <p className='absolute top-[50%] translate-y-[-50%] left-[1rem] text-lg font-bold'>HEADWEAR</p>
               <img src='https://culture-kings-sanity.imgix.net/973649bc1c73cd12245bab94e1c59c8aebff8735-876x280.jpg?w=600&auto=compress,format' alt='image8' />
             </div>
-            <div className='shadow-sm'>
+            <div className='shadow-sm relative'>
+              <p className='absolute top-[50%] translate-y-[-50%] left-[1rem] text-lg font-bold'>JEWELLERY</p>
               <img src='https://culture-kings-sanity.imgix.net/9c35b188c47246ebbf9d55960fa4ae8ae8620a9c-876x280.jpg?w=600&auto=compress,format' alt='image9' />
             </div>
           </div>
