@@ -5,8 +5,8 @@ import HeaderSub from './HeaderSub'
 const HeaderContainer = () => {
   return (
     <div>
-      <HeaderSub />
       <HeaderMain />
+      <HeaderSub />
     </div>
   )
 }

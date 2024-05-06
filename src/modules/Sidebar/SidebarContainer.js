@@ -86,7 +86,7 @@ const SidebarContainer = ( { isDrawerOpen } ) => {
             <div className='pl-4 py-2 flex items-center text-[#333333] h-[60px] gap-2'>
               <InfoIcon />
               <p className='p-0'>Blog</p>
-            </div>
+            </div>  
             <div className='w-[100%] h-[1px] bg-[#e5e5e5]' />
             <div className='pl-4 py-2 flex items-center text-[#333333] h-[60px] gap-2'>
               <ShopIcon />
