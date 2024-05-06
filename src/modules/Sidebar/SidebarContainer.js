@@ -1,14 +1,15 @@
 import { setOpenSidebarDrawer } from '../../store/main/slice'
 import { Drawer, DrawerContent } from '../../components/ui/drawer'
-import React from 'react'
+import React, { useState } from 'react'
 import { useDispatch } from 'react-redux'
 import { Separator } from '../../components/ui/separator'
 import { Tabs, TabsList, TabsTrigger } from '../../components/ui/tabs'
-import { SearchIcon } from '../../common/icons'
+import { CreateIcon, DollarIcon, InfoIcon, PlusIcon, ProfileIcon, SearchIcon, ShopIcon } from '../../common/icons'
 
 const SidebarContainer = ( { isDrawerOpen } ) => {
   const dispatch = useDispatch()
-  console.log( "ffd", isDrawerOpen );
+
+  const [ openedSidebarOptionsList, setOpenedSidebarOptionsList ] = useState( false )
 
   return (
     <Drawer direction={'left'} open={isDrawerOpen || false} onOpenChange={( value ) => dispatch( setOpenSidebarDrawer( value ) )}>
@@ -71,6 +72,41 @@ const SidebarContainer = ( { isDrawerOpen } ) => {
               <img src='https://culture-kings-sanity.imgix.net/9c35b188c47246ebbf9d55960fa4ae8ae8620a9c-876x280.jpg?w=600&auto=compress,format' alt='image9' />
             </div>
           </div>
+          <div className={`flex flex-col w-[100%] bg-white mt-2 ${openedSidebarOptionsList && 'pb-4'}`}>
+            <div className='pl-4 py-2 flex items-center text-[#333333] h-[60px] gap-2'>
+              <ProfileIcon />
+              <p className='p-0'>Sign In</p>
+            </div>
+            <div className='w-[100%] h-[1px] bg-[#e5e5e5]' />
+            <div className='pl-4 py-2 flex items-center text-[#333333] h-[60px] gap-2'>
+              <CreateIcon />
+              <p className='p-0'>Register</p>
+            </div>
+            <div className='w-[100%] h-[1px] bg-[#e5e5e5]' />
+            <div className='pl-4 py-2 flex items-center text-[#333333] h-[60px] gap-2'>
+              <InfoIcon />
+              <p className='p-0'>Blog</p>
+            </div>
+            <div className='w-[100%] h-[1px] bg-[#e5e5e5]' />
+            <div className='pl-4 py-2 flex items-center text-[#333333] h-[60px] gap-2'>
+              <ShopIcon />
+              <p className='p-0'>Shipping & Returns</p>
+            </div>
+            <div className='w-[100%] h-[1px] bg-[#e5e5e5]' />
+            <div className='flex flex-col cursor-pointer' onClick={() => { setOpenedSidebarOptionsList( !openedSidebarOptionsList ) }}>
+              <div className='px-4 py-2 flex items-center justify-between text-[#333333] h-[60px] gap-2'>
+                <div className='flex items-center gap-2'>
+                  <DollarIcon />
+                  <p className='p-0'>Payment options</p>
+                </div>
+                <PlusIcon />
+              </div>
+              {openedSidebarOptionsList && <div className='flex flex-col gap-2 pl-12 text-sm text-[#555555]'>
+                <p className='cursor-pointer'>Phonepe</p>
+                <p className='cursor-pointer'>Google pay</p>
+              </div>}
+            </div>
+            </div>
         </div>
       </DrawerContent>
     </Drawer>
