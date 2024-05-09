@@ -8,15 +8,15 @@ const HeaderSub = () => {
   
 
   return (
-    <div className='flex items-center min-h-[3rem] px-40 bg-slate-100 justify-between'>
+    <div className='flex items-center min-h-[3rem] bg-slate-100 justify-around'>
      
-      <button className='border-2 border-[#333333] rounded-full px-4 py-1 text-sm'>
+      <button className=' px-4 py-1 text-sm'>
         SHOP MENS
       </button>
       <div>
         <SliderText />
       </div>
-      <button className='border-2 border-[#333333] rounded-full px-4 py-1 text-sm'>
+      <button className=' px-4 py-1 text-sm'>
         SHOP WOMENS
       </button>
         {/* <div className='flex items-center justify-center gap-6'>
