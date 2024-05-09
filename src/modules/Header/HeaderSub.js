@@ -1,4 +1,3 @@
-import { socialItems } from '../../utils/constants'
 import React from 'react'
 import SliderText from './SliderText'
 

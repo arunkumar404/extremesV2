@@ -19,7 +19,7 @@ const HeaderMain = () => {
   }
 
   return (
-    <div className='py-6 px-14 flex justify-between items-center bg-[#f24423]'>
+    <div className='py-3 px-14 flex justify-between items-center bg-[#ff0000]'>
       {/* <div className='flex items-center gap-12 text-[#003B5C] font-semibold'>
         {headerNavs.map( ( item, i ) => {
           return (
@@ -33,8 +33,8 @@ const HeaderMain = () => {
         <span className='hover:rotate-90 transition-all hover:transition-all '>
           <HamburgerIcon />
         </span>
-        <span className='font-semibold'>
-          Shop Now
+        <span className='font-medium'>
+          SHOP NOW
         </span>
       </div>
       <img
