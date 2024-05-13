@@ -72,6 +72,7 @@ module.exports = {
         'accordion-up': 'accordion-up 0.2s ease-out',
       },
     },
+    scrollBehavior: [ 'smooth' ], 
   },
   plugins: [require('tailwindcss-animate')],
 }
