@@ -10,7 +10,7 @@ const LatestReleases = () => {
 
   const handleScroll = ( direction ) => {
     if ( scrollContainerRef.current ) {
-      const itemWidth = 410;
+      const itemWidth = 200;
       const scrollAmount = itemWidth * 3;
 
       if ( direction === 'left' ) {
