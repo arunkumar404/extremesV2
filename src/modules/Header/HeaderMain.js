@@ -19,7 +19,7 @@ const HeaderMain = () => {
   }
 
   return (
-    <div className='py-3 px-14 flex justify-between items-center bg-[#ff0000]'>
+    <div className='py-3 min-[650px]:px-14 min-[550px]:px-10 px-7 flex justify-between items-center bg-[#ff0000]'>
       {/* <div className='flex items-center gap-12 text-[#003B5C] font-semibold'>
         {headerNavs.map( ( item, i ) => {
           return (
@@ -31,9 +31,9 @@ const HeaderMain = () => {
       </div> */}
       <div className='flex items-center gap-2 hover:gap-3 transition-all ease-in-out cursor-pointer' onClick={sidebarOpenHandler}>
         <span className='hover:rotate-90 transition-all hover:transition-all '>
-          <HamburgerIcon />
+          <HamburgerIcon color='#ffffff' />
         </span>
-        <span className='font-medium'>
+        <span className='font-medium text-[#ffffff] max-[500px]:hidden'>
           SHOP NOW
         </span>
       </div>
@@ -45,20 +45,20 @@ const HeaderMain = () => {
           navigate( '/' )
         }}
       />
-      <div className='flex items-center gap-10'>
+      <div className='flex items-center gap-5 min-[600px]:gap-6 min-[850px]:gap-10'>
         <div
           className='h-[23px] w-[23px]  cursor-pointer'
           onClick={() => {
             navigate( '/login' )
           }}
         >
-          <ProfileIcon />
+          <ProfileIcon color='#ffffff' />
         </div>
         <div className='h-[23px] w-[23px] cursor-pointer'>
-          <SearchIcon />
+          <SearchIcon color='#ffffff' />
         </div>
         <div className='h-[23px] w-[23px]  cursor-pointer'>
-          <CartIcon />
+          <CartIcon color='#ffffff' />
         </div>
       </div>
     </div>
