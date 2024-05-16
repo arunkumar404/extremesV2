@@ -10,13 +10,13 @@ const HeaderSub = () => {
   return (
     <div className='flex items-center min-h-[3rem] bg-slate-100 justify-around'>
      
-      <button className=' px-4 py-1 text-sm'>
+      <button className=' px-4 py-1 text-sm max-[639px]:hidden'>
         SHOP MENS
       </button>
       <div>
         <SliderText />
       </div>
-      <button className=' px-4 py-1 text-sm'>
+      <button className=' px-4 py-1 text-sm max-[639px]:hidden'>
         SHOP WOMENS
       </button>
         {/* <div className='flex items-center justify-center gap-6'>

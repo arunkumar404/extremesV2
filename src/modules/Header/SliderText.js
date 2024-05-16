@@ -18,7 +18,7 @@ const SliderText = () => {
   }, [] )
 
   return (
-    <div className='relative overflow-hidden min-w-[45rem] h-[40px] flex items-center justify-center'>
+    <div className='relative overflow-hidden lg:min-w-[35rem] md:min-w-[25rem] min-w-[22rem] h-[40px] flex items-center justify-center'>
       <h6
         key={currentIndex}
         className='slide-text slide-out'
